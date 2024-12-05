@@ -1,0 +1,315 @@
+.intro {
+    height: 90vh;
+    width: 100%;
+    margin:0;
+    display: grid;
+    grid-template: 30% 25% 45% / 10% 40% 50%;
+}
+
+.main-title {
+    margin:0;
+    grid-area: 2 / 2 / 3 / 4;
+    color:pink;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+body {
+    margin:0;
+}
+
+.intro-im {
+    grid-area: 1 / 1 / 5 / 4;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: -1;
+    position: fixed;
+}
+
+.intro-p {
+    grid-area: 3 / 2 / 4 / 3; 
+    font-family: "Rozha One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #f2f2f2;
+    margin: 0;
+}
+
+.bs-bg-container {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 70vh;
+    background-color: pink;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bs-bg-box{
+    width:75%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.bs-bg-info {
+    /* flex: 1;     */
+    max-width: 300px;
+    max-height: 250px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.bs-icon-container {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bs-h2 {
+    font-family: "Rozha One", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:1.5rem;
+    padding-top: 15px;
+}
+
+.bg-p {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ews-container {
+    background-color: #f2f2f2;
+    width: 100%;
+    min-height: 60vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ews-text {
+    text-align: center;
+    width: 70%;
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+
+.ews-p {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+}
+
+h3 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 2rem;
+}
+
+.project-container {
+    background-color: black;
+    width: 100%;
+    min-height: 120vh;
+    display:grid;
+    grid-template: 100% / 50% 50%;
+    justify-items: center;
+}
+
+.img-box {
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pp-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.bs-h4 {
+    color: pink;
+    font-family: "DM Serif Display", serif;
+    font-size: 3rem;
+    width: 60%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.pp-p {
+    color: #f2f2f2;
+    font-family: "Varela Round", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 60%;
+    padding-top: 5%;
+}
+
+.pp-image {
+    width: 90%;
+}
+
+.aboutme-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: pink;
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+}
+
+.abt-image-cont {
+    grid-area: 1 / 1 / 3 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    justify-items: center;
+}
+
+.abt-img-box {
+    width: 60%;
+    text-align: center
+}
+
+.abt-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    padding-top: 10%;
+}
+
+.abt-contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.bs-h5 {
+    font-family: "Rozha One", serif;
+    font-size: 2.5rem;
+    margin:0;
+    padding-bottom: 5%;
+}
+
+.abt-p {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin:0;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.bs-footer {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 20vh;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 700px) {
+    .carousel {
+        display:none;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .intro-p {
+        font-size: 1.7rem;
+    }
+    .main-title {
+        font-size: 3.2rem;
+    }
+    .intro {
+        height: 50vh;
+    }
+    .bs-h5 {
+        font-size: 2rem;
+        padding-top: 10%;
+    }
+}
+
+@media (max-width: 699px) {
+    .intro-p {
+        font-size: 1.4rem;
+    }
+    .main-title {
+        font-size:2.5rem;
+    }
+    .intro {
+        height: 30vh;
+    }
+    .project-container {
+        display: none;
+    }
+    .bs-h4 {
+        padding-top: 5%;
+    }
+    .pp-p {
+        padding-bottom: 5%;
+    }
+    .img-box {      
+        width: 100%;
+        min-height: 80vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel-item {
+        min-height: 80vh;
+        background-color: black;
+    }
+    .pp-image {
+        width: 70%;
+    }
+    .pp-text {
+        min-height: 80vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutme-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+    .abt-img-box {
+        padding-top: 10%;
+        width: 50%;
+        height: 50%;
+    }
+    .abt-info, .abt-contact{
+        width: 80%;
+    }
+}
